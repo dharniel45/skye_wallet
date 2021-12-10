@@ -16,7 +16,7 @@ function Tutorial(props) {
 
   useEffect(() => {
     getTutorial(props.match.params.id);
-  },[])
+  },[props.match.params.id])
 
   function onChangeTitle(event) {
     const title = event.target.value;
