@@ -14,7 +14,7 @@ function TutorialsList(props) {
 
   useEffect(() => {
     props.retrieveTutorials();
-  },[])
+  },[props])
 
   function onChangeSearchTitle(event) {
     const searchTitle = event.target.value;
